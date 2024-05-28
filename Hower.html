@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hower</title>
+    <style>
+        .A{
+           color: blueviolet;
+           background-color: bisque;
+           text-shadow:  5px 1px 1px  red;
+        }
+        .body{
+            font-size: 150%;
+            color: aliceblue;
+        }
+    </style>
+    <script src="./jquery.js"></script>
+    <script>
+    //     $(document).ready(function(){
+    //     $("#A").hover(function(){
+    // $(this).addClass("#B")
+    // .removeClass("#A");
+    //     });
+    //     });
+
+    $ (document).ready(function(){
+        $("h3").hover(function(){
+            $(this).toggleClass("B").
+            toggleClass("A");
+        });
+    });
+    </script>
+</head>
+<body style="background-color: green;">
+    <p >
+    <h3 class="A">
+     My school is like a home away from home, where I don't feel <br>
+     out of place or homesick. <br>
+     It is a place where I learn, laugh, smile, play, and enjoy. <br>
+     It stirred up many emotions in me for good reasons, and I will always be thankful to <br>
+    my school and wonderful teachers. 
+    </h3>
+    </p>
+</body>
+</html>

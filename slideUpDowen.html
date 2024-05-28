@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpDowen</title>
+    <script src="./jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#slideDowen").click(function(){
+            $("#d2").slideDown();
+        });
+        $("#slideUp").click(function(){
+            $("#d2").slideUp();
+        });
+        $("#slideToggle").click(function(){
+            $("#d1").slideToggle(5000);
+        });
+    });
+    </script>
+    <style>
+        #d1{
+           color: brown;
+           text-shadow: 100px;
+           background-color: aquamarine;
+
+        }
+        #d2{
+            background-color: blue;
+        }
+        .o{
+        background-color: yellow;
+        text-decoration-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h1>hello everyone</h1>
+        <h2>HELLO EVERYONE</h2>
+        <h3>HelloEveryOne</h3>
+    </div>
+    <div id="d2">
+        Thise is line HelloEveryOne. <br>
+        Thise is line tow everyone. <br>
+        Thise is line three EVERYONE.
+    </div>
+    <div class="o">
+    <button type="button" name="btn" id="slideDowen" style="color: chartreuse;">slideDowen</button>
+    <button type="button" name="btn" id="slideUp" style="color: chartreuse;">slideUp</button>
+    <button type="button" name="btn" id="slideToggle" style="color: chartreuse;">slideToggle</button>
+</div>
+</body>
+</html>

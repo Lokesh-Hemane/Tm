@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="./jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        function validateTextbox(id,errid){
+            var num=$("#+id").val();
+            if(name.trim().length>0){
+                $("#+err1").html("")
+                return true;
+            }
+            else{
+                $("#+err1").html("name cannot found")
+                return false;
+            }
+        }
+    });
+    </script>
+</head>
+<body>
+    <table>
+   <h2>Thise is Regitration form</h2>
+   <form method="post" id="frm1">
+    <tr>
+        <td>
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" size="20">
+        </td>
+        <td id="err1"></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Mob">Mobile No:</label>
+            <input type="text" name="Mob" id="Mob" size="11">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="add">Address:</label>
+            <textarea name="addr" id="addr" rows="5" cols="25"></textarea>
+        </td>  
+    </tr>
+    <tr>
+      <td>
+        <label for="date">Date of joining</label>
+        <input type="date" name="date" id="date">
+      </td>  
+    </tr>
+    <tr>
+        <td>
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+        </td>
+    </tr>
+    <tr>
+     <td>
+        <label for="degree">Degree:</label>
+        <input type="radio" name="degree" id="BTECH" value="BTECH">
+        <label for="btech">BTECH</label>
+        <input type="radio" name="degree" id="BE" value="BE">
+        <label for="BE">BE</label>
+        <input type="radio" name="degree" id="PHD" value="PHD">
+        <label for="PHD">PHD</label>
+     </td>   
+    </tr>
+    <tr>
+        <td>
+            <label for="skill">SKILL :</label>
+            <fieldset>
+                <legend>Select Skill</legend>
+                <input type="checkbox" name="skill" id="java" value="java"/>
+            <label for="java">JAVA</label>
+            <input type="checkbox" name="skill" id="C++" value="C++"/>
+            <label for="C++">C++</label>
+            <input type="checkbox" name="skill" id="python" value="python"/>
+            <label for="python">python</label><br>
+            <input type="checkbox" name="skill" id="Perl" value="Perl"/>
+            <label for="Perl">Perl</label>
+            <input type="checkbox" name="skill" id="Devops" value="Devops"/>
+            <label for="Devops">Devops</label>
+            </fieldset>
+        </td>
+        <td id="errskills"></td>
+    </tr>
+    <tr>
+        <td>
+        <select id="city" name="city">
+            <option value="test">select one city</option>
+            <option value="pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Banglore" >Banglore</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Nagpur">Nagpur</option>
+        </select>   
+    </td>
+    <td id="errcity"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="submit" name="btn" id="btn" value="register">Register</button>
+            <button type="reset" name="btn1" id="btn1" value="reset">Reset</button>
+        </td>
+    </tr>
+ 
+   </form>
+    </table>
+</body>
+</html>

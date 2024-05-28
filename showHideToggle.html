@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHideToggle</title>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+     $("#a").click(function(){
+        $("#A").hide(1500);
+     });
+     $("#b").click(function(){
+        $("#A").show(3000);
+     });
+     $("#c").click(function(){
+        $("#A").toggle(2500);
+     });
+        });
+    </script>
+</head>
+<body>
+    <div id="A">
+        <p style="color: aqua; background-color: burlywood;">
+            In the United States, Extended School Year (ESY) services are designed to <br>
+             support a student with a disability as documented under the Individuals with Disabilities Education Act (IDEA) <br>
+              to maintain the academic, social/behavioral, communication, or other skills that they have learned as part of their <br>
+               Individualized ...  
+        </p>
+    </div>
+    <button id="a" name="button" id="button">Hide</button>
+    <button id="b" name="button" id="button">Show</button>
+    <button id="c" name="button" id="button">Toggle</button>
+</body>
+</html>

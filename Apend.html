@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#B").click(function(){
+            $("#A").load("school.txt");
+        });
+        $("#c").click(function(){
+            $("#A").hide("school.txt");
+        });
+        $("#p").click(function(){
+            $("#A").append("abcd--->ABCD");
+        });
+        });
+    </script>
+</head>
+<body>
+    <div id="A">These is the para</div>
+    <button id="B">Get data</button>
+    <button id="c">Hide</button>
+    <button id="p">Append</button>
+
+</body>
+</html>
